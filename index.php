@@ -1,5 +1,4 @@
 <?php
-
 $i = 0;
 $url = "http://hipsters.tech/feed/podcast/";
 $rss = simplexml_load_file($url);
@@ -9,4 +8,4 @@ foreach($rss->channel->item as $item) {
   echo '<a href="'.$item->link.'">'.$item->title.'</a><br />';
   $i++;
 }
- ?>
+?>
